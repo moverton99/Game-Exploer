@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Explorer</title>
+    <script src="https://unpkg.com/chart.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #chartContainer {
+            width: 90%;
+            height: 65vh;
+            margin: 0 auto;
+        }
+
+        #selectorContainer {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        #scatterChart {
+            width: 100%;
+            max-height: 60vh;
+            background-color: #ffffff; /* Set the background color of the canvas */
+        }
+
+        #gameTable {
+            margin: 0 auto 40px;
+            border-collapse: collapse;
+            width: 90%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+            #gameTable th, #gameTable td {
+                border: 1px solid #ddd;
+                padding: 12px 15px;
+                text-align: left;
+            }
+
+            #gameTable th {
+                background-color: #005f73;
+                color: #fff;
+                font-weight: normal;
+                position: sticky;
+                top: 0;
+            }
+
+            #gameTable tr:nth-child(even) {
+                background-color: #f0f0f0;
+            }
+
+            #gameTable tr:hover {
+                background-color: #e0e0e0;
+            }
+
+        .highlight {
+            background-color: #06a3ca !important;
+        }
+
+        .dialog-link {
+            text-decoration: none;
+            color: #368990;
+        }
+
+            .dialog-link:hover {
+                color: #000000;
+            }
+
+            .dialog-link:active {
+                color: blue;
+            }
+
+        #gameSelectionModal {
+            position: absolute;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            display: none;
+        }
+
+        /* Set column widths */
+        #gameTable th, #gameTable td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+            /* Column widths */
+            #gameTable th:nth-child(1), #gameTable td:nth-child(1) {
+                width: 10%;
+            }
+            /* Name column */
+            #gameTable th:nth-child(2), #gameTable td:nth-child(2) {
+                width: 10%;
+            }
+            /* Learning Curve column */
+            #gameTable th:nth-child(3), #gameTable td:nth-child(3) {
+                width: 20%;
+            }
+            /* Learning Curve Description column */
+            #gameTable th:nth-child(4), #gameTable td:nth-child(4) {
+                width: 10%;
+            }
+            /* Strategic Depth column */
+            #gameTable th:nth-child(5), #gameTable td:nth-child(5) {
+                width: 20%;
+            }
+            /* Strategic Depth Description column */
+            #gameTable th:nth-child(6), #gameTable td:nth-child(6) {
+                width: 10%;
+            }
+            /* Replayability column */
+            #gameTable th:nth-child(7), #gameTable td:nth-child(7) {
+                width: 20%;
+            }
+            /* Replayability Description column */
+            #gameTable th:nth-child(8), #gameTable td:nth-child(8) {
+                width: 10%;
+            }
+        /* Gameplay Style column */
+    </style>
+</head>
+<body>
+    <h1>Game Explorer</h1>
+    <div id="chartContainer">
+        <div id="selectorContainer">
+            <label for="datasetSelector">Select Data Series:</label>
+            <select id="datasetSelector">
+                <option value="lcvdepth">Learning Curve vs Strategic Depth</option>
+                <option value="lcvreply">Learning Curve  vs Replayability</option>
+                <option value="depthvreplay">Strategic Depth vs Replayability</option>
+            </select>
+            <br>
+            <label for="themeSelector">Filter by Gameplay Style Theme:</label>
+            <select id="themeSelector">
+                <option value="all">All Themes</option>
+            </select>
+        </div>
+        <canvas id="scatterChart"></canvas>
+    </div>
+    <br />
+    <h2>Game List</h2>
+    <table id="gameTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Learning Curve</th>
+                <th>Learning Curve Description</th>
+                <th>Strategic Depth</th>
+                <th>Strategic Depth Description</th>
+                <th>Replayability</th>
+                <th>Replayability Description</th>
+                <th>Gameplay Style</th>
+            </tr>
+        </thead>
+        <tbody id="gameTableBody"></tbody>
+    </table>
+
+    <div id="gameSelectionModal"></div>
+
+    <script>
+        const gamelistpath = "https://drive.google.com/file/d/15COGfjiOP6MhvoTyvtKzrQsEfkJIFoOd";
+        const modal = document.getElementById('gameSelectionModal');
+        let hideTimeout;
+        let scatterChart;
+
+        let isMouseOverDialog = false;
+        let isMouseOverPoint = false;
+
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch(gamelistpath)
+                .then(response => response.json())
+                .then(games => initChartAndTable(games))
+                .catch(error => console.error('Error loading game data:', error));
+        });
+
+        function initChartAndTable(games) {
+            const tableBody = document.getElementById('gameTableBody');
+            const themeSelector = document.getElementById('themeSelector');
+            const datasetSelector = document.getElementById('datasetSelector');
+            let selectedDataset = 'lcvdepth';
+
+            // Populate Theme Dropdown
+            const uniqueThemes = [...new Set(games.map(game => game.gameplay_style_theme))].sort();
+            uniqueThemes.forEach(theme => {
+                const option = document.createElement('option');
+                option.value = theme;
+                option.textContent = theme;
+                themeSelector.appendChild(option);
+            });
+
+            function updateTable(filteredGames) {
+                tableBody.innerHTML = '';
+                filteredGames.forEach(game => {
+                    const row = document.createElement('tr');
+                    row.id = `game-${game.name}`;
+                    [game.name, game.learning_curve, game.learning_curve_desc, game.depth, game.strategic_depth_desc, game.replayability, game.Replayability_Desc, game.gameplay_style_theme].forEach(text => {
+                        const cell = document.createElement('td');
+                        cell.textContent = text;
+                        row.appendChild(cell);
+                    });
+                    tableBody.appendChild(row);
+                });
+            }
+
+            const datasets = {
+                lcvdepth: games.map(game => ({ x: game.learning_curve, y: game.depth, gameId: `game-${game.name}`, gameName: game.name, gameplay_style_theme: game.gameplay_style_theme })),
+                lcvreply: games.map(game => ({ x: game.learning_curve, y: game.replayability, gameId: `game-${game.name}`, gameName: game.name, gameplay_style_theme: game.gameplay_style_theme })),
+                depthvreplay: games.map(game => ({ x: game.depth, y: game.replayability, gameId: `game-${game.name}`, gameName: game.name, gameplay_style_theme: game.gameplay_style_theme }))
+            };
+
+            const ctx = document.getElementById('scatterChart').getContext('2d');
+            scatterChart = new Chart(ctx, {
+                type: 'scatter',
+                data: { datasets: [{ label: 'Learning Curve vs Strategic Depth', data: datasets["lcvdepth"], backgroundColor: 'rgba(75, 192, 192, 0.7)', pointRadius: 6 }] },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    scales: {
+                        x: {
+                            title: { display: true, text: 'Learning Curve', font: { size: 20 } },
+                            min: 0,
+                            max: 100
+                        },
+                        y: {
+                            title: { display: true, text: 'Strategic Depth', font: { size: 20 } },
+                            min: 0,
+                            max: 100
+                        }
+                    },
+                    plugins: { tooltip: { enabled: false }, legend: { display: false } },
+                    onHover: (event, elements) => {
+                        if (elements.length > 0) {
+                            const hoveredPoint = scatterChart.data.datasets[0].data[elements[0].index];
+                            const matchingGames = scatterChart.data.datasets[0].data.filter(
+                                g => g.x === hoveredPoint.x && g.y === hoveredPoint.y
+                            );
+                            showGameSelectionDialog(matchingGames, event);
+                        } else {
+                            hideGameSelectionDialog();
+                        }
+                    }
+                }
+            });
+
+            function filterChartAndTable() {
+                modal.style.display = 'none';
+                const selectedTheme = themeSelector.value;
+                const chartdata = datasets[selectedDataset].filter(game =>
+                    selectedTheme === "all" || game.gameplay_style_theme === selectedTheme
+                );
+                scatterChart.data.datasets[0].data = chartdata;
+                if (selectedDataset === 'lcvdepth') {
+                    scatterChart.options.scales.x.title.text = 'Learning Curve';
+                    scatterChart.options.scales.y.title.text = 'Strategic Depth';
+                } else if (selectedDataset === 'lcvreply') {
+                    scatterChart.options.scales.x.title.text = 'Learning Curve';
+                    scatterChart.options.scales.y.title.text = 'Replayability';
+                } else {
+                    scatterChart.options.scales.x.title.text = 'Strategic Depth';
+                    scatterChart.options.scales.y.title.text = 'Replayability';
+                }
+
+                scatterChart.update();
+                updateTable(games.filter(game => selectedTheme === "all" || game.gameplay_style_theme === selectedTheme));
+            }
+
+            updateTable(games);
+            datasetSelector.addEventListener('change', function () {
+                selectedDataset = this.value;
+                filterChartAndTable();
+            });
+            themeSelector.addEventListener('change', function () {
+                filterChartAndTable();
+            });
+        }
+
+        function showGameSelectionDialog(matchingGames, chartEvent) {
+            if (!matchingGames.length) return;
+
+            clearTimeout(hideTimeout);
+
+            const dialogHTML = matchingGames.map(g => {
+                const safeGameId = g.gameId
+                    .replace(/&/g, "&amp;")
+                    .replace(/'/g, "\\'")
+                    .replace(/"/g, "&quot;");
+
+                return `
+                            <a class="dialog-link" href="#${encodeURIComponent(g.gameId)}"
+                               onclick="highlightAndScrollToGame('${safeGameId}'); return false;">
+                                ${g.gameName}
+                            </a><br>
+                        `;
+            }).join('');
+
+            modal.innerHTML = dialogHTML;
+            const rect = scatterChart.canvas.getBoundingClientRect();
+            const left = rect.left + window.scrollX + chartEvent.x;
+            const top = rect.top + window.scrollY + chartEvent.y;
+            modal.style.left = left + 'px';
+            modal.style.top = top + 'px';
+            modal.style.display = 'block';
+
+            // Set flags for mouse over
+            isMouseOverPoint = true;
+            isMouseOverDialog = false;
+
+            modal.onmouseover = () => {
+                isMouseOverDialog = true;
+                clearTimeout(hideTimeout);
+            };
+
+            modal.onmouseout = () => {
+                isMouseOverDialog = false;
+                hideDialogIfNeeded();
+            };
+        }
+
+        function hideGameSelectionDialog() {
+            hideTimeout = setTimeout(() => {
+                if (!isMouseOverPoint && !isMouseOverDialog) {
+                    modal.style.display = 'none';
+                }
+            }, 500);
+        }
+
+        function hideDialogIfNeeded() {
+            if (!isMouseOverPoint && !isMouseOverDialog) {
+                hideGameSelectionDialog();
+            }
+        }
+
+        window.highlightAndScrollToGame = function (gameId) {
+            document.querySelectorAll('.highlight').forEach(el => el.classList.remove('highlight'));
+            const row = document.getElementById(gameId);
+            if (row) {
+                row.classList.add('highlight');
+                row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        };
+
+        document.getElementById('scatterChart').addEventListener('mouseleave', hideGameSelectionDialog);
+        modal.addEventListener('mouseleave', hideGameSelectionDialog);
+    </script>
+</body>
+</html>

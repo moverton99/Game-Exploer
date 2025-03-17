@@ -1,0 +1,668 @@
+[
+  {
+    "name": "Agricola",
+    "complexity": 75,
+    "depth": 85,
+    "ranking_summary": "Agricola’s complex worker placement and resource management systems contribute to high complexity, while its deep strategic planning and engine-building elements result in very high strategic depth.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 75,
+    "Replayability_Desc": "Deep strategic planning and varying family dynamics ensure a new experience with each play."
+  },
+  {
+    "name": "Anachrony",
+    "complexity": 75,
+    "depth": 85,
+    "ranking_summary": "Anachrony is a time-travel-themed worker placement game with a complex resource management system and the ability to borrow resources from the future, demanding careful planning and foresight.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 75,
+    "Replayability_Desc": "Multiple paths, expansions, and the time travel mechanic keep each session engaging and unique."
+  },
+  {
+    "name": "Android: Netrunner",
+    "complexity": 80,
+    "depth": 90,
+    "ranking_summary": "Android: Netrunner’s asymmetrical gameplay and deep deck-building dynamics account for its high complexity, while its strategic depth is driven by intricate mind games and resource management.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 80,
+    "Replayability_Desc": "Asymmetrical deck-building and variable strategies ensure a fresh challenge each time."
+  },
+  {
+    "name": "Ark Nova",
+    "complexity": 70,
+    "depth": 80,
+    "ranking_summary": "Ark Nova is a zoo-building euro game where players manage enclosures, sponsorships, and conservation projects, creating intricate card synergies and strategic choices.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 80,
+    "Replayability_Desc": "A large deck of cards and multiple strategic paths keep each session unique and engaging."
+  },
+  {
+    "name": "Arkham Horror",
+    "complexity": 80,
+    "depth": 50,
+    "ranking_summary": "Arkham Horror’s extensive rules and thematic narrative create a high complexity rating, though its strategic depth is moderate due to its reliance on dice and narrative events.",
+    "gameplay_style_theme": "Cooperative & Social Deduction Games",
+    "replayability": 60,
+    "Replayability_Desc": "Story-driven scenarios offer replayability, but familiar narratives can reduce long-term variation."
+  },
+  {
+    "name": "Axis & Allies",
+    "complexity": 60,
+    "depth": 70,
+    "ranking_summary": "Axis & Allies features a multi-phase war game structure, resulting in moderate complexity and high strategic depth driven by long-term economic and military planning.",
+    "gameplay_style_theme": "Classic",
+    "replayability": 60,
+    "Replayability_Desc": "Though strategically deep, repetitive board dynamics and dice combat can make repeated play feel similar."
+  },
+  {
+    "name": "Bang!",
+    "complexity": 20,
+    "depth": 30,
+    "ranking_summary": "Bang! has straightforward rules with secret roles, leading to a moderate complexity rating but a relatively low strategic depth due to its heavy reliance on chance.",
+    "gameplay_style_theme": "Cooperative & Social Deduction Games",
+    "replayability": 50,
+    "Replayability_Desc": "Social interactions create variety, but limited strategic options can lead to repetitive sessions."
+  },
+  {
+    "name": "Battleship",
+    "complexity": 15,
+    "depth": 15,
+    "ranking_summary": "Battleship’s grid-based play and reliance on pattern recognition yield low complexity and minimal strategic depth, making it a straightforward game of deduction.",
+    "gameplay_style_theme": "Classic",
+    "replayability": 15,
+    "Replayability_Desc": "Simple grid-based play and predictable strategies result in low replay value."
+  },
+  {
+    "name": "Battlestar Galactica",
+    "complexity": 60,
+    "depth": 65,
+    "ranking_summary": "Battlestar Galactica’s blend of cooperative play and hidden traitor mechanics adds moderate complexity, with strategic depth arising from crisis management and negotiation.",
+    "gameplay_style_theme": "Cooperative & Social Deduction Games",
+    "replayability": 70,
+    "Replayability_Desc": "Variable crisis events and social deduction dynamics create different experiences in each play."
+  },
+  {
+    "name": "Bohnanza",
+    "complexity": 20,
+    "depth": 40,
+    "ranking_summary": "Bohnanza’s simple trading and set collection mechanics yield low complexity while its negotiation element provides a modest strategic depth.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 70,
+    "Replayability_Desc": "The trading and negotiation aspects ensure that each play feels different."
+  },
+  {
+    "name": "Brass (Lancashire)",
+    "complexity": 70,
+    "depth": 85,
+    "ranking_summary": "Brass (Lancashire) offers a detailed economic simulation with a multi-phase structure, leading to high complexity and very high strategic depth through long-term planning.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 70,
+    "Replayability_Desc": "Diverse economic strategies and market fluctuations provide varied gameplay experiences."
+  },
+  {
+    "name": "Carcassonne",
+    "complexity": 15,
+    "depth": 40,
+    "ranking_summary": "Carcassonne was evaluated as very easy to learn with moderate strategic depth due to its tile-placement mechanics and tactical decisions, making it a solid gateway game.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 70,
+    "Replayability_Desc": "Random tile draws and an expanding board layout keep each game feeling fresh."
+  },
+  {
+    "name": "Castles of Burgundy",
+    "complexity": 50,
+    "depth": 70,
+    "ranking_summary": "Castles of Burgundy’s dice-driven tile placement and varied scoring methods bring moderate complexity and high strategic depth through optimization challenges.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 75,
+    "Replayability_Desc": "Multiple scoring avenues and strategic decisions yield high replayability."
+  },
+  {
+    "name": "Caylus",
+    "complexity": 70,
+    "depth": 80,
+    "ranking_summary": "Caylus’ intricate worker placement and timing mechanisms result in high complexity, with very high strategic depth emerging from its no-luck, pure decision-based gameplay.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 65,
+    "Replayability_Desc": "Tactical worker placement offers variety, though similar strategic patterns may develop over time."
+  },
+  {
+    "name": "Checkers",
+    "complexity": 5,
+    "depth": 30,
+    "ranking_summary": "Ratings for Checkers were based on its extremely simple rules and limited strategic options; the game is easy to learn but offers only modest depth compared to more complex titles.",
+    "gameplay_style_theme": "Classic",
+    "replayability": 30,
+    "Replayability_Desc": "Limited strategic variety and quick mastery make repeated play somewhat predictable."
+  },
+  {
+    "name": "Chess",
+    "complexity": 30,
+    "depth": 95,
+    "ranking_summary": "Chess, despite having relatively straightforward rules, is renowned for its enormous strategic depth where long-term planning and tactical precision are paramount.",
+    "gameplay_style_theme": "Classic",
+    "replayability": 95,
+    "Replayability_Desc": "Endless strategic possibilities and evolving tactics ensure that no two games are ever exactly the same."
+  },
+  {
+    "name": "Citadels",
+    "complexity": 25,
+    "depth": 45,
+    "ranking_summary": "Citadels combines role selection with bluffing, earning it a low-to-moderate complexity score and a moderate strategic depth based on reading opponents.",
+    "gameplay_style_theme": "Asymmetric / Faction-Based Games",
+    "replayability": 65,
+    "Replayability_Desc": "Role selection and bluffing introduce variety, though patterns may repeat in experienced groups."
+  },
+  {
+    "name": "Clank! Legacy",
+    "complexity": 50,
+    "depth": 60,
+    "ranking_summary": "Clank! Legacy merges deck-building with a legacy system, offering a narrative-driven experience with evolving boards and permanent changes that shape future sessions.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 75,
+    "Replayability_Desc": "The evolving legacy elements keep it fresh, though repeated campaigns may lose the element of surprise."
+  },
+  {
+    "name": "Concordia",
+    "complexity": 50,
+    "depth": 70,
+    "ranking_summary": "Concordia is a streamlined economic and trading euro set in the Roman era, where card management and map-based expansion reward efficient planning.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 80,
+    "Replayability_Desc": "Different maps, expansions, and strategic approaches ensure repeated enjoyment."
+  },
+  {
+    "name": "Descent: Journeys in the Dark",
+    "complexity": 50,
+    "depth": 55,
+    "ranking_summary": "Descent’s dungeon crawl mechanics and miniatures combat result in moderate complexity with medium strategic depth, as scenario-based challenges often dictate gameplay.",
+    "gameplay_style_theme": "Cooperative & Social Deduction Games",
+    "replayability": 65,
+    "Replayability_Desc": "Scenario-based campaigns offer variety, though a fixed storyline may eventually become predictable."
+  },
+  {
+    "name": "Dixit",
+    "complexity": 5,
+    "depth": 10,
+    "ranking_summary": "Dixit was rated extremely low in both complexity and depth as it emphasizes creativity and storytelling over structured strategy.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 60,
+    "Replayability_Desc": "Its creativity-driven gameplay means that different groups can produce varied, fun experiences."
+  },
+  {
+    "name": "Dominion",
+    "complexity": 40,
+    "depth": 70,
+    "ranking_summary": "Dominion’s deck-building mechanics, although easy to grasp, allow for a high degree of strategic decision-making in optimizing your deck, leading to a higher depth rating.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 85,
+    "Replayability_Desc": "A large card pool and diverse deck-building options yield high replay value through different combinations."
+  },
+  {
+    "name": "Dune: Imperium",
+    "complexity": 60,
+    "depth": 75,
+    "ranking_summary": "Dune: Imperium blends deck-building and worker placement in the Dune universe, featuring combat, intrigue, and resource management. Each leader’s unique ability influences the strategic approach.",
+    "gameplay_style_theme": "Asymmetric / Faction-Based Games",
+    "replayability": 75,
+    "Replayability_Desc": "Leader abilities and card synergy create variety across multiple plays."
+  },
+  {
+    "name": "Eclipse",
+    "complexity": 65,
+    "depth": 75,
+    "ranking_summary": "Eclipse’s combination of 4X space exploration and economic management provides a high complexity rating, while its multiple paths to victory yield a high level of strategic depth.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 75,
+    "Replayability_Desc": "Multiple paths to victory and diverse strategies ensure high replay value."
+  },
+  {
+    "name": "Eclipse Second Dawn",
+    "complexity": 70,
+    "depth": 80,
+    "ranking_summary": "Eclipse Second Dawn is an updated version of the 4X space epic, refining exploration, expansion, exploitation, and extermination with improved components and streamlined rules.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 80,
+    "Replayability_Desc": "Multiple alien races, tech paths, and random galaxy setups keep each session distinct."
+  },
+  {
+    "name": "El Grande",
+    "complexity": 40,
+    "depth": 65,
+    "ranking_summary": "El Grande’s card-driven area control is straightforward to learn, but its tactical maneuvering and timing considerations contribute to a higher strategic depth.",
+    "gameplay_style_theme": "Area Control & Wargames",
+    "replayability": 65,
+    "Replayability_Desc": "Area control and player interactions vary each game, though similar strategies may emerge."
+  },
+  {
+    "name": "Food Chain Magnate",
+    "complexity": 80,
+    "depth": 85,
+    "ranking_summary": "Food Chain Magnate is a heavy economic game about managing a fast-food empire, focusing on strategic marketing, hiring, and resource management.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 75,
+    "Replayability_Desc": "High strategic depth and multiple paths to victory ensure strong replay value."
+  },
+  {
+    "name": "Fury of Dracula",
+    "complexity": 50,
+    "depth": 60,
+    "ranking_summary": "Fury of Dracula’s one-versus-many hidden movement system results in moderate complexity, with its strategic depth rooted in bluffing and coordinated planning.",
+    "gameplay_style_theme": "Cooperative & Social Deduction Games",
+    "replayability": 60,
+    "Replayability_Desc": "Asymmetric play and variable scenarios offer some replay value, though experiences can become familiar."
+  },
+  {
+    "name": "Galaxy Trucker",
+    "complexity": 45,
+    "depth": 30,
+    "ranking_summary": "Galaxy Trucker combines real-time ship building with random hazards, yielding moderate complexity but a lower strategic depth as survival often hinges on luck.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 60,
+    "Replayability_Desc": "Random hazards and ship-building variability offer fun, though sometimes unpredictable, gameplay."
+  },
+  {
+    "name": "Gaia Project",
+    "complexity": 80,
+    "depth": 90,
+    "ranking_summary": "Gaia Project is a space-themed successor to Terra Mystica, featuring faction-based terrain manipulation, tech tracks, and minimal luck for a deeply strategic experience.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 85,
+    "Replayability_Desc": "Varied factions and board setups provide extensive replay value for fans of complex euros."
+  },
+  {
+    "name": "Game of Thrones: The Board Game",
+    "complexity": 65,
+    "depth": 80,
+    "ranking_summary": "Game of Thrones combines area control with negotiation and secret orders, leading to higher complexity and a correspondingly high strategic depth through diplomacy and tactical choices.",
+    "gameplay_style_theme": "Asymmetric / Faction-Based Games",
+    "replayability": 65,
+    "Replayability_Desc": "Negotiation and shifting alliances add variety, but a fixed map can limit overall diversity."
+  },
+  {
+    "name": "Gloomhaven",
+    "complexity": 80,
+    "depth": 90,
+    "ranking_summary": "Gloomhaven is a cooperative, campaign-based fantasy adventure game that blends tactical combat with evolving character development. Featuring a modular board, legacy elements, and persistent world progression, it demands strategic planning and adaptability, making it both complex to learn and rich in strategic depth.",
+    "gameplay_style_theme": "Cooperative & Social Deduction Games",
+    "replayability": 75,
+    "Replayability_Desc": "A rich campaign with evolving scenarios and legacy elements provides varied experiences over multiple sessions."
+  },
+  {
+    "name": "Hanabi",
+    "complexity": 15,
+    "depth": 45,
+    "ranking_summary": "Hanabi’s cooperative rules are easy to learn, yet the limited communication and need for deduction add a moderate layer of strategic depth.",
+    "gameplay_style_theme": "Cooperative & Social Deduction Games",
+    "replayability": 70,
+    "Replayability_Desc": "Cooperative deduction and variable team dynamics provide a fresh experience each time."
+  },
+  {
+    "name": "Hive",
+    "complexity": 30,
+    "depth": 70,
+    "ranking_summary": "Hive features straightforward movement rules but its entirely tactical, no-luck gameplay gives it a high strategic depth relative to its simplicity.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 85,
+    "Replayability_Desc": "Deep abstract strategy with endless tactical possibilities ensures high replayability."
+  },
+  {
+    "name": "King of Tokyo",
+    "complexity": 20,
+    "depth": 30,
+    "ranking_summary": "King of Tokyo is easy to learn due to its dice mechanics, but its strategic decisions are limited, resulting in low to moderate strategic depth.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 55,
+    "Replayability_Desc": "Random dice rolls and limited strategic options lower the replay value over time."
+  },
+  {
+    "name": "Existence",
+    "complexity": 100,
+    "depth": 100,
+    "ranking_summary": "Existence is a ridiculously complex reality game where the rules are made up as you go along, and the manual is written in a language you don't speak. You start with a character who's still figuring out how to walk, and the first level is called 'Surviving Childhood' – complete with obstacles like broccoli and bedtime. As you level up, you encounter challenges like 'Finding a Job' and 'Adulting,' which are basically just endless loops of paying bills and pretending to be a functioning member of society. But don't worry, there are power-ups like coffee and Netflix to help you through the tough times. And just when you think you've reached the final boss, life throws you a curveball and says, 'Surprise! You're now in charge of your own mini-game called Parenting!' Good luck",
+    "gameplay_style_theme": "Classic",
+    "replayability": "?",
+    "Replayability_Desc": "Wouldn't you like to know."
+  },
+  {
+    "name": "Lords of Waterdeep",
+    "complexity": 35,
+    "depth": 50,
+    "ranking_summary": "Lords of Waterdeep uses accessible worker placement within a thematic setting, resulting in moderate complexity and a balanced level of strategic depth.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 70,
+    "Replayability_Desc": "Diverse quests and strategic choices offer a balanced replay experience."
+  },
+  {
+    "name": "Love Letter",
+    "complexity": 5,
+    "depth": 20,
+    "ranking_summary": "Love Letter’s minimal card interactions result in a very low complexity rating and a correspondingly low level of strategic depth.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 65,
+    "Replayability_Desc": "Short, fast rounds and random draws offer a fresh challenge in each play."
+  },
+  {
+    "name": "Mage Knight Board Game",
+    "complexity": 85,
+    "depth": 90,
+    "ranking_summary": "Mage Knight Board Game is known for its notoriously steep learning curve and intricate mechanics, resulting in very high complexity and an extremely high strategic depth due to its multi-layered decision-making.",
+    "gameplay_style_theme": "Asymmetric / Faction-Based Games",
+    "replayability": 70,
+    "Replayability_Desc": "Campaign progression and varied scenarios provide replay value, though the long playtime can limit repeated sessions."
+  },
+  {
+    "name": "Monopoly",
+    "complexity": 30,
+    "depth": 25,
+    "ranking_summary": "Monopoly received a moderate complexity rating due to its varied rules and house-rule potential, but its reliance on chance and basic strategic decisions results in a lower strategic depth score.",
+    "gameplay_style_theme": "Classic",
+    "replayability": 40,
+    "Replayability_Desc": "Heavy reliance on chance and a static board setup lead to a repetitive experience over time."
+  },
+  {
+    "name": "Munchkin",
+    "complexity": 20,
+    "depth": 20,
+    "ranking_summary": "Munchkin’s humorous take on RPGs makes its rules easy to pick up, but the game’s heavy reliance on chance and take-that mechanics keeps its strategic depth low.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 55,
+    "Replayability_Desc": "Humor and randomness offer some variety, but repeated play can feel similar."
+  },
+  {
+    "name": "No Thanks!",
+    "complexity": 5,
+    "depth": 35,
+    "ranking_summary": "No Thanks! features a very simple push-your-luck mechanism, but the risk management involved raises its strategic depth slightly above its simplicity.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 60,
+    "Replayability_Desc": "Simple mechanics with risk management yield moderate replay value."
+  },
+  {
+    "name": "Orleans",
+    "complexity": 50,
+    "depth": 70,
+    "ranking_summary": "Orleans uses a bag-building mechanic set in medieval France, where players recruit followers to develop trade, produce goods, and expand influence.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 75,
+    "Replayability_Desc": "Multiple strategic paths and expansions keep each session fresh."
+  },
+  {
+    "name": "Pandemic",
+    "complexity": 45,
+    "depth": 60,
+    "ranking_summary": "Pandemic’s cooperative play and multi-role mechanics add a moderate complexity layer, while its strategic depth stems from collective planning and resource management.",
+    "gameplay_style_theme": "Cooperative & Social Deduction Games",
+    "replayability": 70,
+    "Replayability_Desc": "Variable roles and scenario adjustments offer decent replayability despite some fixed elements."
+  },
+  {
+    "name": "Pax Pamir",
+    "complexity": 65,
+    "depth": 80,
+    "ranking_summary": "Pax Pamir is a historical game of political intrigue in 19th-century Afghanistan, emphasizing shifting alliances, tactical card play, and regional control.",
+    "gameplay_style_theme": "Asymmetric / Faction-Based Games",
+    "replayability": 75,
+    "Replayability_Desc": "Ever-changing alliances and a dynamic card market lead to varied outcomes each play."
+  },
+  {
+    "name": "Power Grid",
+    "complexity": 60,
+    "depth": 80,
+    "ranking_summary": "Power Grid’s multi-phase economic gameplay and resource market dynamics result in higher complexity and very high strategic depth through long-term planning.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 80,
+    "Replayability_Desc": "Dynamic markets and economic decisions provide high replay value with each session feeling unique."
+  },
+  {
+    "name": "Puerto Rico",
+    "complexity": 70,
+    "depth": 85,
+    "ranking_summary": "Puerto Rico’s intricate role selection and building strategies account for its higher complexity and very deep strategic options, rewarding long-term planning and foresight.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 75,
+    "Replayability_Desc": "Diverse strategies and variable setups keep the gameplay engaging over multiple plays."
+  },
+  {
+    "name": "Race for the Galaxy",
+    "complexity": 50,
+    "depth": 80,
+    "ranking_summary": "Race for the Galaxy’s icon-heavy card play and simultaneous actions place it at moderate complexity while its deck-building and engine optimization drive high strategic depth.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 85,
+    "Replayability_Desc": "Diverse card interactions and multiple strategies ensure that every game feels fresh."
+  },
+  {
+    "name": "Risk",
+    "complexity": 30,
+    "depth": 40,
+    "ranking_summary": "Risk’s relatively simple rules for global conquest give it moderate complexity, while its strategic depth is tempered by dice-based combat and alliance dynamics.",
+    "gameplay_style_theme": "Classic",
+    "replayability": 50,
+    "Replayability_Desc": "While strategic, repeated play can follow similar patterns due to dice reliance and fixed board dynamics."
+  },
+  {
+    "name": "Rock Paper Scissors",
+    "complexity": 1,
+    "depth": 1,
+    "ranking_summary": "Rock Paper Scissors is a simple hand game where players simultaneously choose one of three options—rock, paper, or scissors—resulting in a quick, chance-based contest with minimal strategic depth.",
+    "gameplay_style_theme": "Classic",
+    "replayability": 5,
+    "Replayability_Desc": "Its simplicity means there’s little strategic variation, but its spontaneity makes it a fun, quick decision-making game."
+  },
+  {
+    "name": "Root",
+    "complexity": 45,
+    "depth": 75,
+    "ranking_summary": "Root’s asymmetric gameplay, featuring varied factions with unique abilities and objectives, results in moderate complexity paired with high strategic depth as players must adapt and balance conflict, territory control, and faction-specific strategies.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 80,
+    "Replayability_Desc": "Asymmetric factions and dynamic gameplay yield high replay value, with each faction offering a distinct experience."
+  },
+  {
+    "name": "Settlers of Catan",
+    "complexity": 40,
+    "depth": 60,
+    "ranking_summary": "Settlers of Catan was rated moderate for complexity, given its resource management and trading mechanics, and moderate strategic depth due to its dynamic board state and negotiation elements.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 80,
+    "Replayability_Desc": "Randomized board setups and dynamic trading provide varied experiences with each play."
+  },
+  {
+    "name": "Small World",
+    "complexity": 35,
+    "depth": 50,
+    "ranking_summary": "Small World’s accessible territory control and fantasy themes yield moderate complexity, with its strategic depth coming from timing and selection of race/power combos.",
+    "gameplay_style_theme": "Asymmetric / Faction-Based Games",
+    "replayability": 70,
+    "Replayability_Desc": "Varied faction combinations and board setups keep the gameplay fresh."
+  },
+  {
+    "name": "Spirit Island",
+    "complexity": 70,
+    "depth": 85,
+    "ranking_summary": "Spirit Island is a cooperative game where players embody unique spirits defending their island from colonial invaders, featuring intricate combos and synergy among abilities.",
+    "gameplay_style_theme": "Cooperative & Social Deduction Games",
+    "replayability": 85,
+    "Replayability_Desc": "Unique spirits, modular boards, and adjustable difficulty keep the game fresh across many plays."
+  },
+  {
+    "name": "Splendor",
+    "complexity": 20,
+    "depth": 45,
+    "ranking_summary": "Splendor’s simple engine-building mechanics make it very accessible, while its timing and planning elements yield a moderate strategic depth.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 75,
+    "Replayability_Desc": "Multiple paths to victory and engine-building dynamics keep the game engaging across sessions."
+  },
+  {
+    "name": "Stone Age",
+    "complexity": 30,
+    "depth": 50,
+    "ranking_summary": "Stone Age features simple worker placement and resource management, earning it a moderate complexity rating with corresponding medium strategic depth.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 70,
+    "Replayability_Desc": "Variable resource management and worker placement decisions provide a fresh experience each game."
+  },
+  {
+    "name": "Summoner Wars",
+    "complexity": 40,
+    "depth": 60,
+    "ranking_summary": "Summoner Wars’ tactical combat on a grid and unique faction abilities create moderate complexity and a medium-to-high strategic depth as players balance offense and defense.",
+    "gameplay_style_theme": "Asymmetric / Faction-Based Games",
+    "replayability": 65,
+    "Replayability_Desc": "Tactical grid combat offers moderate replay value, though board constraints can limit variety."
+  },
+  {
+    "name": "Terra Mystica",
+    "complexity": 80,
+    "depth": 90,
+    "ranking_summary": "Terra Mystica’s faction-based territory development and intricate resource management deliver high complexity alongside extremely high strategic depth in its multifaceted decision space.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 80,
+    "Replayability_Desc": "Multiple factions and varied strategies make every game a new experience."
+  },
+  {
+    "name": "Terraforming Mars",
+    "complexity": 60,
+    "depth": 80,
+    "ranking_summary": "Terraforming Mars’ combination of engine building, resource management, and competitive board development results in moderate complexity and high strategic depth through long-term strategic planning.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 80,
+    "Replayability_Desc": "Multiple paths to victory and diverse strategies keep the game engaging over many playthroughs."
+  },
+  {
+    "name": "Texas Hold'em",
+    "complexity": 10,
+    "depth": 70,
+    "ranking_summary": "Texas Hold'em has very simple rules, but the strategic depth comes from probability, bluffing, and reading opponents, giving it a high depth rating despite minimal complexity.",
+    "gameplay_style_theme": "Classic",
+    "replayability": 75,
+    "Replayability_Desc": "Varied hands and bluffing dynamics in competitive play provide high replay value."
+  },
+  {
+    "name": "The Crew: Mission Deep Sea",
+    "complexity": 20,
+    "depth": 40,
+    "ranking_summary": "The Crew: Mission Deep Sea is a cooperative trick-taking game with evolving missions, requiring precise communication and coordination to succeed.",
+    "gameplay_style_theme": "Cooperative & Social Deduction Games",
+    "replayability": 70,
+    "Replayability_Desc": "Multiple missions and trick-taking challenges offer variety despite simple core rules."
+  },
+  {
+    "name": "The Resistance",
+    "complexity": 10,
+    "depth": 40,
+    "ranking_summary": "The Resistance relies on simple voting and discussion, resulting in low complexity but moderate strategic depth through social deduction and bluffing.",
+    "gameplay_style_theme": "Cooperative & Social Deduction Games",
+    "replayability": 60,
+    "Replayability_Desc": "Social deduction creates different dynamics each play, though core mechanics remain similar."
+  },
+  {
+    "name": "Through the Ages",
+    "complexity": 85,
+    "depth": 95,
+    "ranking_summary": "Through the Ages’ civilization-building framework features extensive rules and long-term planning, yielding very high complexity and nearly unmatched strategic depth on a card-driven system.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 80,
+    "Replayability_Desc": "Extensive civilization-building and numerous strategies ensure fresh challenges in each play."
+  },
+  {
+    "name": "Tic-Tac-Toe",
+    "complexity": 1,
+    "depth": 1,
+    "ranking_summary": "Tic-Tac-Toe’s simple grid and basic rules result in the lowest ratings in both complexity and strategic depth, offering almost no room for advanced planning.",
+    "gameplay_style_theme": "Classic",
+    "replayability": 5,
+    "Replayability_Desc": "A solved game with very limited strategic options, offering almost no replay value once mastered."
+  },
+  {
+    "name": "Tigris & Euphrates",
+    "complexity": 50,
+    "depth": 75,
+    "ranking_summary": "Tigris & Euphrates uses concise yet abstract rules to govern tile placement and conflict resolution, resulting in moderate complexity and very high strategic depth due to its delicate balance mechanics.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 75,
+    "Replayability_Desc": "The balance of conflict and strategy creates a different dynamic with each play."
+  },
+  {
+    "name": "Ticket to Ride",
+    "complexity": 20,
+    "depth": 50,
+    "ranking_summary": "Ticket to Ride’s simple rules and accessible gameplay were rated low on complexity while still offering a moderate level of strategic route planning and blocking tactics.",
+    "gameplay_style_theme": "Classic",
+    "replayability": 65,
+    "Replayability_Desc": "Route choices and varied ticket draws offer moderate variety, though strategies often converge."
+  },
+  {
+    "name": "Too Many Bones",
+    "complexity": 70,
+    "depth": 75,
+    "ranking_summary": "Too Many Bones is a dice-builder RPG with unique characters, each with its own skill dice and progression paths, offering tactical combat and robust character development.",
+    "gameplay_style_theme": "Cooperative & Social Deduction Games",
+    "replayability": 80,
+    "Replayability_Desc": "Character variety and randomized encounters keep the experience fresh over many sessions."
+  },
+  {
+    "name": "Twilight Imperium (3rd Ed.)",
+    "complexity": 85,
+    "depth": 85,
+    "ranking_summary": "Twilight Imperium’s epic scope and multitude of components lead to very high complexity, with high strategic depth derived from its blend of diplomacy, warfare, and resource management.",
+    "gameplay_style_theme": "Asymmetric / Faction-Based Games",
+    "replayability": 70,
+    "Replayability_Desc": "Epic scope and strategic diplomacy provide varied experiences, though long playtimes can reduce repeat sessions."
+  },
+  {
+    "name": "Twilight Struggle",
+    "complexity": 75,
+    "depth": 90,
+    "ranking_summary": "Twilight Struggle’s card-driven representation of the Cold War yields high complexity and extremely high strategic depth through asymmetrical gameplay and intricate decision-making.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 85,
+    "Replayability_Desc": "Asymmetrical play and deep historical strategy offer high replay value with each match feeling unique."
+  },
+  {
+    "name": "Underwater Cities",
+    "complexity": 60,
+    "depth": 80,
+    "ranking_summary": "Underwater Cities is a card-driven city-building game where players develop underwater metropolises, balancing resource management and engine-building for points.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 75,
+    "Replayability_Desc": "Diverse card combos and board layouts provide strong replay value."
+  },
+  {
+    "name": "Viticulture",
+    "complexity": 45,
+    "depth": 65,
+    "ranking_summary": "Viticulture is a worker placement game about running a vineyard, focusing on planting vines, harvesting grapes, and producing wine for victory points.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 70,
+    "Replayability_Desc": "Seasonal worker placement and different visitor cards maintain variety."
+  },
+  {
+    "name": "War of the Ring",
+    "complexity": 80,
+    "depth": 85,
+    "ranking_summary": "War of the Ring’s thematic recreation of Middle-earth involves high complexity through asymmetrical play and diverse objectives, resulting in very high strategic depth as players balance narrative and tactical decisions.",
+    "gameplay_style_theme": "Area Control & Wargames",
+    "replayability": 70,
+    "Replayability_Desc": "Thematic narrative and varied objectives keep the game engaging, despite some repetitive elements."
+  },
+  {
+    "name": "Wingspan",
+    "complexity": 35,
+    "depth": 55,
+    "ranking_summary": "Wingspan is an engine-building game about attracting birds to your wildlife preserves, with over a hundred unique bird cards offering combos and set collection.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 75,
+    "Replayability_Desc": "A large bird card deck and multiple strategies keep it interesting over many plays."
+  },
+  {
+    "name": "Wits & Wagers",
+    "complexity": 10,
+    "depth": 20,
+    "ranking_summary": "Wits & Wagers is extremely easy to learn with its trivia and betting system, and while fun, it offers only a low level of strategic depth.",
+    "gameplay_style_theme": "Abstract",
+    "replayability": 50,
+    "Replayability_Desc": "Trivia content can become repetitive, limiting its long-term replay value."
+  }
+]
