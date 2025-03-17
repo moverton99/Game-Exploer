@@ -135,7 +135,7 @@
     </style>
 </head>
 <body>
-    <h1>Game Explorer 1</h1>
+    <h1>Game Explorer</h1>
     <div id="chartContainer">
         <div id="selectorContainer">
             <label for="datasetSelector">Select Data Series:</label>
@@ -173,7 +173,8 @@
     <div id="gameSelectionModal"></div>
 
     <script>
-        const gamelistpath = "https://drive.google.com/file/d/15COGfjiOP6MhvoTyvtKzrQsEfkJIFoOd";
+        //const gamelistpath = "https://drive.google.com/file/d/15COGfjiOP6MhvoTyvtKzrQsEfkJIFoOd";
+        const gamelistpath = "games.json";
         const modal = document.getElementById('gameSelectionModal');
         let hideTimeout;
         let scatterChart;
@@ -182,7 +183,7 @@
         let isMouseOverPoint = false;
 
         document.addEventListener("DOMContentLoaded", function () {
-            fetch(gamelistpath)
+            fetch(gamelistpath + "?nocache" + new Date().getTime())
                 .then(response => response.json())
                 .then(games => initChartAndTable(games))
                 .catch(error => console.error('Error loading game data:', error));
@@ -208,7 +209,7 @@
                 filteredGames.forEach(game => {
                     const row = document.createElement('tr');
                     row.id = `game-${game.name}`;
-                    [game.name, game.learning_curve, game.learning_curve_desc, game.depth, game.strategic_depth_desc, game.replayability, game.Replayability_Desc, game.gameplay_style_theme].forEach(text => {
+                    [game.name, game.learning_curve, game.learning_curve_desc, game.strategic_depth, game.strategic_depth_desc, game.replayability, game.Replayability_Desc, game.gameplay_style_theme].forEach(text => {
                         const cell = document.createElement('td');
                         cell.textContent = text;
                         row.appendChild(cell);
@@ -218,9 +219,9 @@
             }
 
             const datasets = {
-                lcvdepth: games.map(game => ({ x: game.learning_curve, y: game.depth, gameId: `game-${game.name}`, gameName: game.name, gameplay_style_theme: game.gameplay_style_theme })),
+                lcvdepth: games.map(game => ({ x: game.learning_curve, y: game.strategic_depth, gameId: `game-${game.name}`, gameName: game.name, gameplay_style_theme: game.gameplay_style_theme })),
                 lcvreply: games.map(game => ({ x: game.learning_curve, y: game.replayability, gameId: `game-${game.name}`, gameName: game.name, gameplay_style_theme: game.gameplay_style_theme })),
-                depthvreplay: games.map(game => ({ x: game.depth, y: game.replayability, gameId: `game-${game.name}`, gameName: game.name, gameplay_style_theme: game.gameplay_style_theme }))
+                depthvreplay: games.map(game => ({ x: game.strategic_depth, y: game.replayability, gameId: `game-${game.name}`, gameName: game.name, gameplay_style_theme: game.gameplay_style_theme }))
             };
 
             const ctx = document.getElementById('scatterChart').getContext('2d');
