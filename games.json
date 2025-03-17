@@ -1,0 +1,732 @@
+[
+    {
+        "name": "Agricola",
+        "learning_curve": 75,
+        "strategic_depth": 85,
+        "learning_curve_desc": "Complex worker placement and a multitude of rules make Agricola challenging to learn.",
+        "strategic_depth_desc": "Deep strategic planning and engine-building elements result in very high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 75,
+        "Replayability_Desc": "Deep strategic planning and varying family dynamics ensure a new experience with each play."
+    },
+    {
+        "name": "Anachrony",
+        "learning_curve": 75,
+        "strategic_depth": 85,
+        "learning_curve_desc": "Anachrony's innovative time-travel mechanics and resource management yield a steep learning curve.",
+        "strategic_depth_desc": "Multiple strategic paths and the ability to borrow from the future provide high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 75,
+        "Replayability_Desc": "Multiple paths, expansions, and the time travel mechanic keep each session engaging and unique."
+    },
+    {
+        "name": "Android: Netrunner",
+        "learning_curve": 80,
+        "strategic_depth": 90,
+        "learning_curve_desc": "Its asymmetrical rules and deep deck-building require significant initial investment to master.",
+        "strategic_depth_desc": "Intricate mind games and shifting strategies yield high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 80,
+        "Replayability_Desc": "Asymmetrical deck-building and variable strategies ensure a fresh challenge each time."
+    },
+    {
+        "name": "Ark Nova",
+        "learning_curve": 70,
+        "strategic_depth": 80,
+        "learning_curve_desc": "Managing enclosures, sponsorships, and conservation projects introduces moderate complexity.",
+        "strategic_depth_desc": "Card synergies and multiple strategic choices create a rich strategic experience.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 80,
+        "Replayability_Desc": "A large deck and diverse paths keep each session unique and engaging."
+    },
+    {
+        "name": "Arkham Horror",
+        "learning_curve": 80,
+        "strategic_depth": 50,
+        "learning_curve_desc": "A lengthy rule set and thematic narrative result in a high learning curve.",
+        "strategic_depth_desc": "Reliance on dice and scripted events limits strategic depth somewhat.",
+        "gameplay_style_theme": "Cooperative & Social Deduction Games",
+        "replayability": 60,
+        "Replayability_Desc": "Story-driven scenarios offer replayability, but familiar narratives can reduce long-term variation."
+    },
+    {
+        "name": "Axis & Allies",
+        "learning_curve": 60,
+        "strategic_depth": 70,
+        "learning_curve_desc": "The multi-phase war structure and numerous unit types require moderate learning time.",
+        "strategic_depth_desc": "Long-term economic and military planning contribute to high strategic depth.",
+        "gameplay_style_theme": "Classic",
+        "replayability": 60,
+        "Replayability_Desc": "Though strategically deep, repetitive board dynamics and dice combat can make repeated play feel similar."
+    },
+    {
+        "name": "Bang!",
+        "learning_curve": 20,
+        "strategic_depth": 30,
+        "learning_curve_desc": "Simple rules and secret roles allow for a quick setup and easy play.",
+        "strategic_depth_desc": "Heavy reliance on chance keeps strategic depth relatively low.",
+        "gameplay_style_theme": "Cooperative & Social Deduction Games",
+        "replayability": 50,
+        "Replayability_Desc": "Social interactions create variety, but limited strategic options can lead to repetitive sessions."
+    },
+    {
+        "name": "Battleship",
+        "learning_curve": 15,
+        "strategic_depth": 15,
+        "learning_curve_desc": "Straightforward grid-based rules make Battleship very easy to learn.",
+        "strategic_depth_desc": "Limited options and heavy reliance on pattern recognition yield minimal strategic depth.",
+        "gameplay_style_theme": "Classic",
+        "replayability": 15,
+        "Replayability_Desc": "Simple grid-based play and predictable strategies result in low replay value."
+    },
+    {
+        "name": "Battlestar Galactica",
+        "learning_curve": 60,
+        "strategic_depth": 65,
+        "learning_curve_desc": "A complex mix of cooperative play and hidden roles creates a moderate learning challenge.",
+        "strategic_depth_desc": "Crisis management and negotiation add layers of strategic depth.",
+        "gameplay_style_theme": "Cooperative & Social Deduction Games",
+        "replayability": 70,
+        "Replayability_Desc": "Variable crisis events and social deduction dynamics create different experiences in each play."
+    },
+    {
+        "name": "Bohnanza",
+        "learning_curve": 20,
+        "strategic_depth": 40,
+        "learning_curve_desc": "The simple rules of trading and card management are easy to pick up.",
+        "strategic_depth_desc": "Negotiation and timing provide a modest level of strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 70,
+        "Replayability_Desc": "The trading and negotiation aspects ensure that each play feels different."
+    },
+    {
+        "name": "Brass (Lancashire)",
+        "learning_curve": 70,
+        "strategic_depth": 85,
+        "learning_curve_desc": "A detailed economic simulation with multiple phases results in a high learning curve.",
+        "strategic_depth_desc": "Long-term planning and economic management offer very high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 70,
+        "Replayability_Desc": "Diverse economic strategies and market fluctuations provide varied gameplay experiences."
+    },
+    {
+        "name": "Carcassonne",
+        "learning_curve": 15,
+        "strategic_depth": 40,
+        "learning_curve_desc": "Simple tile-placement rules make Carcassonne very easy to learn.",
+        "strategic_depth_desc": "Random tile draws and tactical placement yield moderate strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 70,
+        "Replayability_Desc": "Random tile draws and an expanding board layout keep each game feeling fresh."
+    },
+    {
+        "name": "Castles of Burgundy",
+        "learning_curve": 50,
+        "strategic_depth": 70,
+        "learning_curve_desc": "Dice-driven tile placement and a variety of actions create a moderate learning curve.",
+        "strategic_depth_desc": "Optimization challenges and multiple scoring avenues provide high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 75,
+        "Replayability_Desc": "Multiple scoring avenues and strategic decisions yield high replayability."
+    },
+    {
+        "name": "Caylus",
+        "learning_curve": 70,
+        "strategic_depth": 80,
+        "learning_curve_desc": "Intricate worker placement and timing mechanics require a steep learning curve.",
+        "strategic_depth_desc": "Pure decision-based gameplay with little luck offers very high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 65,
+        "Replayability_Desc": "Tactical worker placement offers variety, though similar strategic patterns may develop over time."
+    },
+    {
+        "name": "Checkers",
+        "learning_curve": 5,
+        "strategic_depth": 30,
+        "learning_curve_desc": "Extremely simple rules make Checkers very easy to pick up.",
+        "strategic_depth_desc": "Limited strategic variety leads to modest depth compared to more complex games.",
+        "gameplay_style_theme": "Classic",
+        "replayability": 30,
+        "Replayability_Desc": "Limited strategic variety and quick mastery make repeated play somewhat predictable."
+    },
+    {
+        "name": "Chess",
+        "learning_curve": 30,
+        "strategic_depth": 95,
+        "learning_curve_desc": "Basic rules are learned quickly, though mastering the game takes years.",
+        "strategic_depth_desc": "Endless opening variations and deep tactical play result in enormous strategic depth.",
+        "gameplay_style_theme": "Classic",
+        "replayability": 95,
+        "Replayability_Desc": "Endless strategic possibilities and evolving tactics ensure that no two games are ever exactly the same."
+    },
+    {
+        "name": "Citadels",
+        "learning_curve": 25,
+        "strategic_depth": 45,
+        "learning_curve_desc": "Simple role selection and bluffing mechanics are easy to understand.",
+        "strategic_depth_desc": "Reading opponents and timing your moves provide moderate strategic depth.",
+        "gameplay_style_theme": "Asymmetric / Faction-Based Games",
+        "replayability": 65,
+        "Replayability_Desc": "Role selection and bluffing introduce variety, though patterns may repeat in experienced groups."
+    },
+    {
+        "name": "Clank! Legacy",
+        "learning_curve": 50,
+        "strategic_depth": 60,
+        "learning_curve_desc": "Combining deck-building with a legacy system creates a moderate learning curve as rules evolve over time.",
+        "strategic_depth_desc": "The narrative progression and evolving board state add strategic layers throughout the campaign.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 75,
+        "Replayability_Desc": "The evolving legacy elements keep it fresh, though repeated campaigns may lose the element of surprise."
+    },
+    {
+        "name": "Concordia",
+        "learning_curve": 50,
+        "strategic_depth": 70,
+        "learning_curve_desc": "Straightforward economic rules set in ancient Rome make Concordia accessible.",
+        "strategic_depth_desc": "Efficient card management and map expansion provide significant strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 80,
+        "Replayability_Desc": "Different maps, expansions, and strategic approaches ensure repeated enjoyment."
+    },
+    {
+        "name": "Descent: Journeys in the Dark",
+        "learning_curve": 50,
+        "strategic_depth": 55,
+        "learning_curve_desc": "A moderate set of rules for dungeon crawling and miniatures combat make it accessible.",
+        "strategic_depth_desc": "Scenario-based challenges and tactical combat yield medium strategic depth.",
+        "gameplay_style_theme": "Cooperative & Social Deduction Games",
+        "replayability": 65,
+        "Replayability_Desc": "Scenario-based campaigns offer variety, though a fixed storyline may eventually become predictable."
+    },
+    {
+        "name": "Dixit",
+        "learning_curve": 5,
+        "strategic_depth": 10,
+        "learning_curve_desc": "The game’s simple, image-based rules make it extremely easy to learn.",
+        "strategic_depth_desc": "Emphasis on creativity and storytelling results in minimal strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 60,
+        "Replayability_Desc": "Its creativity-driven gameplay means that different groups can produce varied, fun experiences."
+    },
+    {
+        "name": "Dominion",
+        "learning_curve": 40,
+        "strategic_depth": 70,
+        "learning_curve_desc": "Deck-building mechanics are straightforward but require learning various card interactions.",
+        "strategic_depth_desc": "Optimizing your deck through diverse card choices leads to high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 85,
+        "Replayability_Desc": "A large card pool and diverse deck-building options yield high replay value through different combinations."
+    },
+    {
+        "name": "Dune: Imperium",
+        "learning_curve": 60,
+        "strategic_depth": 75,
+        "learning_curve_desc": "Combines deck-building with worker placement in the Dune universe, requiring moderate learning to master its unique mechanics.",
+        "strategic_depth_desc": "Interplay between combat, intrigue, and resource management delivers solid strategic depth.",
+        "gameplay_style_theme": "Asymmetric / Faction-Based Games",
+        "replayability": 75,
+        "Replayability_Desc": "Leader abilities and card synergy create variety across multiple plays."
+    },
+    {
+        "name": "Eclipse",
+        "learning_curve": 65,
+        "strategic_depth": 75,
+        "learning_curve_desc": "Its blend of 4X exploration and economic management presents a challenging learning curve.",
+        "strategic_depth_desc": "Multiple paths to victory and resource management yield high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 75,
+        "Replayability_Desc": "Multiple paths to victory and diverse strategies ensure high replay value."
+    },
+    {
+        "name": "Eclipse Second Dawn",
+        "learning_curve": 70,
+        "strategic_depth": 80,
+        "learning_curve_desc": "An updated version that refines the rules, resulting in a slightly higher learning curve.",
+        "strategic_depth_desc": "Improved components and streamlined rules add further layers to its strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 80,
+        "Replayability_Desc": "Multiple alien races, tech paths, and random galaxy setups keep each session distinct."
+    },
+    {
+        "name": "El Grande",
+        "learning_curve": 40,
+        "strategic_depth": 65,
+        "learning_curve_desc": "Simple area control and card mechanics make it easy to learn.",
+        "strategic_depth_desc": "Tactical maneuvering and timing considerations add a high level of strategic depth.",
+        "gameplay_style_theme": "Area Control & Wargames",
+        "replayability": 65,
+        "Replayability_Desc": "Area control and player interactions vary each game, though similar strategies may emerge."
+    },
+    {
+        "name": "Food Chain Magnate",
+        "learning_curve": 80,
+        "strategic_depth": 85,
+        "learning_curve_desc": "A heavy economic game with intricate rules on hiring and marketing requires a steep learning curve.",
+        "strategic_depth_desc": "Managing a fast-food empire with multiple strategic avenues provides very high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 75,
+        "Replayability_Desc": "High strategic depth and multiple paths to victory ensure strong replay value."
+    },
+    {
+        "name": "Fury of Dracula",
+        "learning_curve": 50,
+        "strategic_depth": 60,
+        "learning_curve_desc": "The one-versus-many hidden movement system is moderately challenging to learn.",
+        "strategic_depth_desc": "Bluffing and coordinated planning provide a fair degree of strategic depth.",
+        "gameplay_style_theme": "Cooperative & Social Deduction Games",
+        "replayability": 60,
+        "Replayability_Desc": "Asymmetric play and variable scenarios offer some replay value, though experiences can become familiar."
+    },
+    {
+        "name": "Galaxy Trucker",
+        "learning_curve": 45,
+        "strategic_depth": 30,
+        "learning_curve_desc": "The real-time ship building and component functions are moderately easy to learn.",
+        "strategic_depth_desc": "Heavy reliance on luck limits its strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 60,
+        "Replayability_Desc": "Random hazards and ship-building variability offer fun, though sometimes unpredictable, gameplay."
+    },
+    {
+        "name": "Gaia Project",
+        "learning_curve": 80,
+        "strategic_depth": 90,
+        "learning_curve_desc": "A space-themed successor to Terra Mystica with intricate rules and faction mechanics, resulting in a high learning curve.",
+        "strategic_depth_desc": "Deep strategic planning with minimal luck provides very high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 85,
+        "Replayability_Desc": "Varied factions and board setups provide extensive replay value for fans of complex euros."
+    },
+    {
+        "name": "Game of Thrones: The Board Game",
+        "learning_curve": 65,
+        "strategic_depth": 80,
+        "learning_curve_desc": "Complex area control with negotiation and secret orders creates a moderately high learning curve.",
+        "strategic_depth_desc": "Diplomacy and tactical choices yield high strategic depth.",
+        "gameplay_style_theme": "Asymmetric / Faction-Based Games",
+        "replayability": 65,
+        "Replayability_Desc": "Negotiation and shifting alliances add variety, but a fixed map can limit overall diversity."
+    },
+    {
+        "name": "Gloomhaven",
+        "learning_curve": 80,
+        "strategic_depth": 90,
+        "learning_curve_desc": "A complex cooperative campaign with evolving rules and legacy elements makes it challenging to learn.",
+        "strategic_depth_desc": "Tactical combat and character progression provide rich strategic depth.",
+        "gameplay_style_theme": "Cooperative & Social Deduction Games",
+        "replayability": 75,
+        "Replayability_Desc": "A rich campaign with evolving scenarios and legacy elements provides varied experiences over multiple sessions."
+    },
+    {
+        "name": "Hanabi",
+        "learning_curve": 15,
+        "strategic_depth": 45,
+        "learning_curve_desc": "Its cooperative rules and limited communication make Hanabi easy to pick up.",
+        "strategic_depth_desc": "Deduction and teamwork add a moderate layer of strategic depth.",
+        "gameplay_style_theme": "Cooperative & Social Deduction Games",
+        "replayability": 70,
+        "Replayability_Desc": "Cooperative deduction and variable team dynamics provide a fresh experience each time."
+    },
+    {
+        "name": "Hive",
+        "learning_curve": 30,
+        "strategic_depth": 70,
+        "learning_curve_desc": "Simple movement rules and no setup make Hive easy to learn.",
+        "strategic_depth_desc": "Pure abstract tactical play offers high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 85,
+        "Replayability_Desc": "Deep abstract strategy with endless tactical possibilities ensures high replayability."
+    },
+    {
+        "name": "King of Tokyo",
+        "learning_curve": 20,
+        "strategic_depth": 30,
+        "learning_curve_desc": "The dice mechanics and simple rules allow for rapid learning.",
+        "strategic_depth_desc": "Limited strategic choices result in modest depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 55,
+        "Replayability_Desc": "Random dice rolls and limited strategic options lower the replay value over time."
+    },
+    {
+        "name": "Existence",
+        "learning_curve": 100,
+        "strategic_depth": 100,
+        "learning_curve_desc": "Existence is a ridiculously complex reality game where the rules are made up as you go along, and the manual is written in a language you don't speak. You start with a character who's still figuring out how to walk, and the first level is called 'Surviving Childhood' – complete with obstacles like broccoli and bedtime. As you level up, you encounter challenges like 'Finding a Job' and 'Adulting,' which are basically just endless loops of paying bills and pretending to be a functioning member of society. But don't worry, there are power-ups like coffee and Netflix to help you through the tough times. And just when you think you've reached the final boss, life throws you a curveball and says, 'Surprise! You're now in charge of your own mini-game called Parenting!' Good luck",
+        "strategic_depth_desc": "Infinite",
+        "gameplay_style_theme": "Classic",
+        "replayability": "?",
+        "Replayability_Desc": "Wouldn't you like to know."
+    },
+    {
+        "name": "Lords of Waterdeep",
+        "learning_curve": 35,
+        "strategic_depth": 50,
+        "learning_curve_desc": "Accessible worker placement within a rich thematic setting makes it moderately easy to learn.",
+        "strategic_depth_desc": "Balanced strategic choices through quest management yield moderate strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 70,
+        "Replayability_Desc": "Diverse quests and strategic choices offer a balanced replay experience."
+    },
+    {
+        "name": "Love Letter",
+        "learning_curve": 5,
+        "strategic_depth": 20,
+        "learning_curve_desc": "Minimal card interactions result in a very low learning curve.",
+        "strategic_depth_desc": "Limited strategic options lead to shallow long-term planning.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 65,
+        "Replayability_Desc": "Short, fast rounds and random draws offer a fresh challenge in each play."
+    },
+    {
+        "name": "Mage Knight Board Game",
+        "learning_curve": 85,
+        "strategic_depth": 90,
+        "learning_curve_desc": "Notoriously steep learning curve due to multi-layered rules and extensive options.",
+        "strategic_depth_desc": "Intricate decision-making and campaign depth provide extremely high strategic depth.",
+        "gameplay_style_theme": "Asymmetric / Faction-Based Games",
+        "replayability": 70,
+        "Replayability_Desc": "Campaign progression and varied scenarios provide replay value, though long playtimes can limit repeated sessions."
+    },
+    {
+        "name": "Monopoly",
+        "learning_curve": 30,
+        "strategic_depth": 25,
+        "learning_curve_desc": "Varied rules and potential house-rules yield a moderate learning curve.",
+        "strategic_depth_desc": "Heavy reliance on chance results in low strategic depth.",
+        "gameplay_style_theme": "Classic",
+        "replayability": 40,
+        "Replayability_Desc": "Heavy reliance on chance and a static board setup lead to a repetitive experience over time."
+    },
+    {
+        "name": "Munchkin",
+        "learning_curve": 20,
+        "strategic_depth": 20,
+        "learning_curve_desc": "Humorous rules and parody elements make Munchkin easy to learn.",
+        "strategic_depth_desc": "Heavy reliance on chance and 'take-that' mechanics limits its strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 55,
+        "Replayability_Desc": "Humor and randomness offer some variety, but repeated play can feel similar."
+    },
+    {
+        "name": "No Thanks!",
+        "learning_curve": 5,
+        "strategic_depth": 35,
+        "learning_curve_desc": "A very simple push-your-luck mechanism makes it extremely easy to learn.",
+        "strategic_depth_desc": "Risk management elements add a modest layer of strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 60,
+        "Replayability_Desc": "Simple mechanics with risk management yield moderate replay value."
+    },
+    {
+        "name": "Orleans",
+        "learning_curve": 50,
+        "strategic_depth": 70,
+        "learning_curve_desc": "The bag-building mechanic and medieval theme present a moderate learning curve.",
+        "strategic_depth_desc": "Recruiting followers and expanding influence create significant strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 75,
+        "Replayability_Desc": "Multiple strategic paths and expansions keep each session fresh."
+    },
+    {
+        "name": "Pandemic",
+        "learning_curve": 45,
+        "strategic_depth": 60,
+        "learning_curve_desc": "Cooperative multi-role mechanics yield a moderate learning curve.",
+        "strategic_depth_desc": "Collective planning and resource management add moderate strategic depth.",
+        "gameplay_style_theme": "Cooperative & Social Deduction Games",
+        "replayability": 70,
+        "Replayability_Desc": "Variable roles and scenario adjustments offer decent replayability despite some fixed elements."
+    },
+    {
+        "name": "Pax Pamir",
+        "learning_curve": 65,
+        "strategic_depth": 80,
+        "learning_curve_desc": "A historical game with intricate political and card-driven mechanics that take time to master.",
+        "strategic_depth_desc": "Shifting alliances and tactical card play yield high strategic depth.",
+        "gameplay_style_theme": "Asymmetric / Faction-Based Games",
+        "replayability": 75,
+        "Replayability_Desc": "Ever-changing alliances and a dynamic card market lead to varied outcomes each play."
+    },
+    {
+        "name": "Power Grid",
+        "learning_curve": 60,
+        "strategic_depth": 80,
+        "learning_curve_desc": "Multi-phase economic gameplay and resource market dynamics require focused learning.",
+        "strategic_depth_desc": "Long-term planning and dynamic markets provide very high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 80,
+        "Replayability_Desc": "Dynamic markets and economic decisions provide high replay value with each session feeling unique."
+    },
+    {
+        "name": "Puerto Rico",
+        "learning_curve": 70,
+        "strategic_depth": 85,
+        "learning_curve_desc": "Intricate role selection and building mechanics yield a steep learning curve.",
+        "strategic_depth_desc": "Multiple strategic options and negotiation contribute to very high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 75,
+        "Replayability_Desc": "Diverse strategies and variable setups keep the gameplay engaging over multiple plays."
+    },
+    {
+        "name": "Race for the Galaxy",
+        "learning_curve": 50,
+        "strategic_depth": 80,
+        "learning_curve_desc": "Icon-heavy card play and simultaneous actions create a moderate learning curve.",
+        "strategic_depth_desc": "Deck-building and engine optimization yield high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 85,
+        "Replayability_Desc": "Diverse card interactions and multiple strategies ensure that every game feels fresh."
+    },
+    {
+        "name": "Risk",
+        "learning_curve": 30,
+        "strategic_depth": 40,
+        "learning_curve_desc": "Simple rules for global conquest make Risk relatively easy to learn.",
+        "strategic_depth_desc": "Dice-based combat and alliance dynamics contribute only moderate strategic depth.",
+        "gameplay_style_theme": "Classic",
+        "replayability": 50,
+        "Replayability_Desc": "While strategic, repeated play can follow similar patterns due to dice reliance and fixed board dynamics."
+    },
+    {
+        "name": "Rock Paper Scissors",
+        "learning_curve": 1,
+        "strategic_depth": 1,
+        "learning_curve_desc": "A very simple hand game with instantly learnable rules.",
+        "strategic_depth_desc": "Almost no strategic depth beyond spontaneous choice.",
+        "gameplay_style_theme": "Classic",
+        "replayability": 5,
+        "Replayability_Desc": "Its simplicity means there’s little strategic variation, but its spontaneity makes it a fun, quick decision-making game."
+    },
+    {
+        "name": "Root",
+        "learning_curve": 45,
+        "strategic_depth": 75,
+        "learning_curve_desc": "Asymmetric rules and varied faction abilities create a moderate learning curve.",
+        "strategic_depth_desc": "Dynamic faction interactions and territory control provide high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 80,
+        "Replayability_Desc": "Asymmetric factions and dynamic gameplay yield high replay value, with each faction offering a distinct experience."
+    },
+    {
+        "name": "Settlers of Catan",
+        "learning_curve": 40,
+        "strategic_depth": 60,
+        "learning_curve_desc": "Resource management and trading mechanics yield a moderate learning curve.",
+        "strategic_depth_desc": "Dynamic board setups and negotiation add moderate strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 80,
+        "Replayability_Desc": "Randomized board setups and dynamic trading provide varied experiences with each play."
+    },
+    {
+        "name": "Small World",
+        "learning_curve": 35,
+        "strategic_depth": 50,
+        "learning_curve_desc": "Accessible territory control and fantasy themes yield a moderate learning curve.",
+        "strategic_depth_desc": "Timing and selection of race/power combos create a balanced strategic depth.",
+        "gameplay_style_theme": "Asymmetric / Faction-Based Games",
+        "replayability": 70,
+        "Replayability_Desc": "Varied faction combinations and board setups keep the gameplay fresh."
+    },
+    {
+        "name": "Spirit Island",
+        "learning_curve": 70,
+        "strategic_depth": 85,
+        "learning_curve_desc": "A cooperative game with complex spirit abilities and nuanced rules, resulting in a steep learning curve.",
+        "strategic_depth_desc": "Intricate combos and synergy among diverse powers yield very high strategic depth.",
+        "gameplay_style_theme": "Cooperative & Social Deduction Games",
+        "replayability": 85,
+        "Replayability_Desc": "Unique spirits, modular boards, and adjustable difficulty keep the game fresh across many plays."
+    },
+    {
+        "name": "Splendor",
+        "learning_curve": 20,
+        "strategic_depth": 45,
+        "learning_curve_desc": "Simple engine-building rules make Splendor very easy to learn.",
+        "strategic_depth_desc": "Timing and planning add a moderate layer of strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 75,
+        "Replayability_Desc": "Multiple paths to victory and engine-building dynamics keep the game engaging across sessions."
+    },
+    {
+        "name": "Stone Age",
+        "learning_curve": 30,
+        "strategic_depth": 50,
+        "learning_curve_desc": "Straightforward worker placement and resource gathering make it moderately easy to learn.",
+        "strategic_depth_desc": "Variable resource management and worker placement decisions yield medium strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 70,
+        "Replayability_Desc": "Variable resource management and worker placement decisions provide a fresh experience each game."
+    },
+    {
+        "name": "Summoner Wars",
+        "learning_curve": 40,
+        "strategic_depth": 60,
+        "learning_curve_desc": "Grid-based tactical combat and unique faction abilities lead to a moderate learning curve.",
+        "strategic_depth_desc": "Balancing offense and defense on a tactical grid creates medium-to-high strategic depth.",
+        "gameplay_style_theme": "Asymmetric / Faction-Based Games",
+        "replayability": 65,
+        "Replayability_Desc": "Tactical grid combat offers moderate replay value, though board constraints can limit variety."
+    },
+    {
+        "name": "Terra Mystica",
+        "learning_curve": 80,
+        "strategic_depth": 90,
+        "learning_curve_desc": "Faction-based territory development and resource management yield a high learning curve.",
+        "strategic_depth_desc": "Intricate strategic decisions and varied faction abilities result in extremely high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 80,
+        "Replayability_Desc": "Multiple factions and varied strategies make every game a new experience."
+    },
+    {
+        "name": "Terraforming Mars",
+        "learning_curve": 60,
+        "strategic_depth": 80,
+        "learning_curve_desc": "Engine building, resource management, and board development result in a moderate learning curve.",
+        "strategic_depth_desc": "Long-term strategic planning with multiple paths to victory yields high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 80,
+        "Replayability_Desc": "Multiple paths to victory and diverse strategies keep the game engaging over many playthroughs."
+    },
+    {
+        "name": "Texas Hold'em",
+        "learning_curve": 10,
+        "strategic_depth": 70,
+        "learning_curve_desc": "Very simple rules make it easy to learn, even for beginners.",
+        "strategic_depth_desc": "Probability, bluffing, and reading opponents provide significant strategic depth.",
+        "gameplay_style_theme": "Classic",
+        "replayability": 75,
+        "Replayability_Desc": "Varied hands and bluffing dynamics in competitive play provide high replay value."
+    },
+    {
+        "name": "The Crew: Mission Deep Sea",
+        "learning_curve": 20,
+        "strategic_depth": 40,
+        "learning_curve_desc": "Cooperative trick-taking rules are straightforward and easy to learn.",
+        "strategic_depth_desc": "Evolving missions and coordinated play add moderate strategic depth.",
+        "gameplay_style_theme": "Cooperative & Social Deduction Games",
+        "replayability": 70,
+        "Replayability_Desc": "Multiple missions and trick-taking challenges offer variety despite simple core rules."
+    },
+    {
+        "name": "The Resistance",
+        "learning_curve": 10,
+        "strategic_depth": 40,
+        "learning_curve_desc": "Simple voting and discussion mechanics make it very easy to pick up.",
+        "strategic_depth_desc": "Social deduction and bluffing add a moderate layer of strategic depth.",
+        "gameplay_style_theme": "Cooperative & Social Deduction Games",
+        "replayability": 60,
+        "Replayability_Desc": "Social deduction creates different dynamics each play, though core mechanics remain similar."
+    },
+    {
+        "name": "Through the Ages",
+        "learning_curve": 85,
+        "strategic_depth": 95,
+        "learning_curve_desc": "A civilization-building game with extensive rules results in a very steep learning curve.",
+        "strategic_depth_desc": "Card-driven systems and long-term planning offer nearly unmatched strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 80,
+        "Replayability_Desc": "Extensive civilization-building and numerous strategies ensure fresh challenges in each play."
+    },
+    {
+        "name": "Tigris & Euphrates",
+        "learning_curve": 50,
+        "strategic_depth": 75,
+        "learning_curve_desc": "Concise yet abstract tile placement rules yield a moderate learning curve.",
+        "strategic_depth_desc": "Delicate balance mechanics and conflict resolution provide very high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 75,
+        "Replayability_Desc": "The balance of conflict and strategy creates a different dynamic with each play."
+    },
+    {
+        "name": "Ticket to Ride",
+        "learning_curve": 20,
+        "strategic_depth": 50,
+        "learning_curve_desc": "Its simple route-building rules make Ticket to Ride very accessible.",
+        "strategic_depth_desc": "Moderate strategic planning in route selection and blocking yields decent depth.",
+        "gameplay_style_theme": "Classic",
+        "replayability": 65,
+        "Replayability_Desc": "Route choices and varied ticket draws offer moderate variety, though strategies often converge."
+    },
+    {
+        "name": "Too Many Bones",
+        "learning_curve": 70,
+        "strategic_depth": 75,
+        "learning_curve_desc": "Unique dice-builder RPG mechanics and character-specific skills create a steep learning curve.",
+        "strategic_depth_desc": "Robust character development and tactical combat provide solid strategic depth.",
+        "gameplay_style_theme": "Cooperative & Social Deduction Games",
+        "replayability": 80,
+        "Replayability_Desc": "Character variety and randomized encounters keep the experience fresh over many sessions."
+    },
+    {
+        "name": "Twilight Imperium (3rd Ed.)",
+        "learning_curve": 85,
+        "strategic_depth": 85,
+        "learning_curve_desc": "An epic space opera with a massive rule set that takes significant time to learn.",
+        "strategic_depth_desc": "Diplomacy, warfare, and resource management interweave to provide high strategic depth.",
+        "gameplay_style_theme": "Asymmetric / Faction-Based Games",
+        "replayability": 70,
+        "Replayability_Desc": "Epic scope and strategic diplomacy provide varied experiences, though long playtimes can reduce repeat sessions."
+    },
+    {
+        "name": "Twilight Struggle",
+        "learning_curve": 75,
+        "strategic_depth": 90,
+        "learning_curve_desc": "A card-driven representation of the Cold War that requires mastering complex historical events.",
+        "strategic_depth_desc": "Intricate asymmetrical gameplay and deep strategic decisions offer extremely high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 85,
+        "Replayability_Desc": "Asymmetrical play and deep historical strategy offer high replay value with each match feeling unique."
+    },
+    {
+        "name": "Underwater Cities",
+        "learning_curve": 60,
+        "strategic_depth": 80,
+        "learning_curve_desc": "Card-driven city-building rules set underwater demand moderate learning.",
+        "strategic_depth_desc": "Balancing resource management and engine-building yields high strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 75,
+        "Replayability_Desc": "Diverse card combos and board layouts provide strong replay value."
+    },
+    {
+        "name": "Viticulture",
+        "learning_curve": 45,
+        "strategic_depth": 65,
+        "learning_curve_desc": "Worker placement and vineyard management rules create a moderate learning curve.",
+        "strategic_depth_desc": "Balancing vine planting, harvesting, and wine production offers solid strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 70,
+        "Replayability_Desc": "Seasonal worker placement and different visitor cards maintain variety."
+    },
+    {
+        "name": "War of the Ring",
+        "learning_curve": 80,
+        "strategic_depth": 85,
+        "learning_curve_desc": "The thematic recreation of Middle-earth with asymmetric play creates a high learning curve.",
+        "strategic_depth_desc": "Balancing narrative objectives with tactical decisions offers very high strategic depth.",
+        "gameplay_style_theme": "Area Control & Wargames",
+        "replayability": 70,
+        "Replayability_Desc": "Thematic narrative and varied objectives keep the game engaging, despite some repetitive elements."
+    },
+    {
+        "name": "Wingspan",
+        "learning_curve": 35,
+        "strategic_depth": 55,
+        "learning_curve_desc": "Engine-building with bird cards is easy to learn thanks to clear, intuitive rules.",
+        "strategic_depth_desc": "Diverse bird abilities and set collection mechanics provide moderate strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 75,
+        "Replayability_Desc": "A large bird card deck and multiple strategies keep it interesting over many plays."
+    },
+    {
+        "name": "Wits & Wagers",
+        "learning_curve": 10,
+        "strategic_depth": 20,
+        "learning_curve_desc": "Extremely simple trivia and betting rules result in a minimal learning curve.",
+        "strategic_depth_desc": "Limited strategic decision-making leads to low overall strategic depth.",
+        "gameplay_style_theme": "Abstract",
+        "replayability": 50,
+        "Replayability_Desc": "Trivia content can become repetitive, limiting its long-term replay value."
+    }
+]
