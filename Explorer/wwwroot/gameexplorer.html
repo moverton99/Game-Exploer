@@ -9,13 +9,14 @@
             margin: 0;
             padding: 20px;
             font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
+            background-color: #000000;
+            color: #FC9779;
         }
 
         h1, h2 {
             text-align: center;
             margin-bottom: 20px;
+            color: #2A9D8F
         }
 
         #chartContainer {
@@ -29,17 +30,23 @@
             margin-bottom: 10px;
         }
 
+            #selectorContainer label {
+                wifth: 100%;
+                color: #2A9D8F;
+            }
+
         #scatterChart {
-            width: 100%;
+            width: 100% !important;
+            height: 100% !important;
             max-height: 60vh;
-            background-color: #ffffff; /* Set the background color of the canvas */
+            background-color: #000000; /* Set the background color of the canvas */
         }
 
         #gameTable {
             margin: 0 auto 40px;
             border-collapse: collapse;
             width: 90%;
-            background-color: #fff;
+            background-color: #000000;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
@@ -50,23 +57,37 @@
             }
 
             #gameTable th {
-                background-color: #005f73;
+                background-color: #2A9D8F;
                 color: #fff;
                 font-weight: normal;
                 position: sticky;
                 top: 0;
             }
 
-            #gameTable tr:nth-child(even) {
-                background-color: #f0f0f0;
+            #gameTable td {
+                color: #cee5e2;
             }
+            /*
+                #gameTable tr:nth-child(even) {
+                background-color: #f0f0f0;
+            
 
             #gameTable tr:hover {
-                background-color: #e0e0e0;
-            }
+                background-color: #373d3c;
+            }}
+
+            */
 
         .highlight {
-            background-color: #06a3ca !important;
+            background-color: #373d3c !important;
+        }
+
+        #datasetSelector, #themeSelector {
+            background-color: #000000; /* Change this to your desired background color */
+            color: #cee5e2; /* Change this to your desired text color */
+            border: 1px solid #2A9D8F; /* Optional: Change the border color */
+            padding: 5px; /* Optional: Add some padding */
+            border-radius: 5px; /* Optional: Add rounded corners */
         }
 
         .dialog-link {
@@ -135,26 +156,27 @@
     </style>
 </head>
 <body>
-    <h1>Game Explorer</h1>
+    <!--<h1>Game Explorer</h1> -->
+    <div id="selectorContainer">
+        <label for="datasetSelector">Compare:</label>
+        <select id="datasetSelector">
+            <option value="lcvdepth">Learning Curve vs Strategic Depth</option>
+            <option value="lcvreply">Learning Curve  vs Replayability</option>
+            <option value="depthvreplay">Strategic Depth vs Replayability</option>
+        </select>
+        <br>
+        <label for="themeSelector">Gameplay Style:</label>
+        <select id="themeSelector">
+            <option value="all">All Themes</option>
+        </select>
+    </div>
     <div id="chartContainer">
-        <div id="selectorContainer">
-            <label for="datasetSelector">Select Data Series:</label>
-            <select id="datasetSelector">
-                <option value="lcvdepth">Learning Curve vs Strategic Depth</option>
-                <option value="lcvreply">Learning Curve  vs Replayability</option>
-                <option value="depthvreplay">Strategic Depth vs Replayability</option>
-            </select>
-            <br>
-            <label for="themeSelector">Filter by Gameplay Style Theme:</label>
-            <select id="themeSelector">
-                <option value="all">All Themes</option>
-            </select>
-        </div>
+
         <canvas id="scatterChart"></canvas>
     </div>
-    <br /><br />
+    <div height="20px"></div>
 
-    <h2>Game List</h2>
+    <!--    <h2>Game List</h2>-->
     <table id="gameTable">
         <thead>
             <tr>
@@ -228,18 +250,18 @@
             const ctx = document.getElementById('scatterChart').getContext('2d');
             scatterChart = new Chart(ctx, {
                 type: 'scatter',
-                data: { datasets: [{ label: 'Learning Curve vs Strategic Depth', data: datasets["lcvdepth"], backgroundColor: 'rgba(75, 192, 192, 0.7)', pointRadius: 6 }] },
+                data: { datasets: [{ label: 'Learning Curve vs Strategic Depth', data: datasets["lcvdepth"], backgroundColor: 'rgba(42, 157, 143, 0.7)', pointRadius: 6 }] },
                 options: {
                     responsive: true,
                     maintainAspectRatio: true,
                     scales: {
                         x: {
-                            title: { display: true, text: 'Learning Curve', font: { size: 20 } },
+                            title: { display: true, text: 'Learning Curve', font: { size: 20 }, color: '#cee5e2'},
                             min: 0,
                             max: 100
                         },
                         y: {
-                            title: { display: true, text: 'Strategic Depth', font: { size: 20 } },
+                            title: { display: true, text: 'Strategic Depth', font: { size: 20 }, color: '#cee5e2'},
                             min: 0,
                             max: 100
                         }
