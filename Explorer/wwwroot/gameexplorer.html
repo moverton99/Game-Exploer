@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title>Game Explorer</title>
     <script src="https://unpkg.com/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.0.2"></script>
+    <script>
+        Chart.register('chartjs-plugin-annotation');
+
+        // ... rest of your code
+    </script>
+
     <style>
         body {
             margin: 0;
@@ -26,12 +33,13 @@
         }
 
         #selectorContainer {
+            margin-left: 10%;
             text-align: left;
             margin-bottom: 10px;
         }
 
             #selectorContainer label {
-                wifth: 100%;
+                width: 100%;
                 color: #2A9D8F;
             }
 
@@ -92,7 +100,7 @@
 
         .dialog-link {
             text-decoration: none;
-            color: #368990;
+            color: #161919;
         }
 
             .dialog-link:hover {
@@ -105,8 +113,8 @@
 
         #gameSelectionModal {
             position: absolute;
-            background: white;
-            padding: 15px;
+            background: #cee5e2;
+            padding: 10px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.3);
             z-index: 1000;
@@ -256,17 +264,66 @@
                     maintainAspectRatio: true,
                     scales: {
                         x: {
-                            title: { display: true, text: 'Learning Curve', font: { size: 20 }, color: '#cee5e2'},
+                            title: { display: true, text: 'x', font: { size: 20 }, color: '#cee5e2' },
+                            grid: {
+                                display: true,
+                                color: '#444' // Optional: Set the color of the gridlines
+                            },
+                            ticks: {
+                                font: {
+                                    size: 14, // Set the font size
+                                    family: 'Arial', // Set the font family
+                                    weight: 'normal' // Set the font weight
+                                },
+                                color: '#4a9999' // Set the color of the tick labels
+                            },
                             min: 0,
                             max: 100
                         },
                         y: {
-                            title: { display: true, text: 'Strategic Depth', font: { size: 20 }, color: '#cee5e2'},
+                            title: { display: true, text: 'y', font: { size: 20 }, color: '#cee5e2' },
+                            grid: {
+                                display: true,
+                                color: '#444' // Optional: Set the color of the gridlines
+                            },
+                            ticks: {
+                                font: {
+                                    size: 14, // Set the font size
+                                    family: 'Arial', // Set the font family
+                                    weight: 'normal' // Set the font weight
+                                },
+                                color: '#4a9999' // Set the color of the tick labels
+                            },
                             min: 0,
                             max: 100
                         }
                     },
-                    plugins: { tooltip: { enabled: false }, legend: { display: false } },
+                    plugins: {
+                        tooltip: { enabled: false },
+                        legend: { display: false },
+                        //annotation: {
+                        //    annotations: {
+                        //        line1: {
+                        //            type: 'line',
+                        //            yMin: 60,
+                        //            yMax: 60,
+                        //            borderColor: 'rgb(255, 99, 132)',
+                        //            borderWidth: 2
+                        //        },
+                        //        label199: {
+                        //            type: 'label',
+                        //            xValue: 50,
+                        //            yValue: 60,
+                        //            backgroundColor: 'rgba(245,245,245)',
+                        //            content: ['This is my text', 'This is my text, second line'],
+                        //            font: {
+                        //                size: 18
+                        //            }
+                        //        }
+                        //    }
+                        //}
+                    },
+
                     onHover: (event, elements) => {
                         if (elements.length > 0) {
                             const hoveredPoint = scatterChart.data.datasets[0].data[elements[0].index];
@@ -280,6 +337,8 @@
                     }
                 }
             });
+            filterChartAndTable();
+            
 
             function filterChartAndTable() {
                 modal.style.display = 'none';
@@ -289,17 +348,17 @@
                 );
                 scatterChart.data.datasets[0].data = chartdata;
                 if (selectedDataset === 'lcvdepth') {
-                    scatterChart.options.scales.x.title.text = 'Learning Curve';
-                    scatterChart.options.scales.y.title.text = 'Strategic Depth';
+                    scatterChart.options.scales.x.title.text = '<- Easy          Learning Curve        Hard ->';
+                    scatterChart.options.scales.y.title.text = '<- Low           Strategic Depth       High ->';
                 } else if (selectedDataset === 'lcvreply') {
-                    scatterChart.options.scales.x.title.text = 'Learning Curve';
-                    scatterChart.options.scales.y.title.text = 'Replayability';
+                    scatterChart.options.scales.x.title.text = '<- Easy          Learning Curve        Hard ->';
+                    scatterChart.options.scales.y.title.text = '<- Low           Replayability         High ->';
                 } else {
-                    scatterChart.options.scales.x.title.text = 'Strategic Depth';
-                    scatterChart.options.scales.y.title.text = 'Replayability';
+                    scatterChart.options.scales.x.title.text = '<- Low           Strategic Depth       High ->';
+                    scatterChart.options.scales.y.title.text = '<- Low           Replayability         High ->';
                 }
 
-                scatterChart.update();
+                 scatterChart.update();
                 updateTable(games.filter(game => selectedTheme === "all" || game.gameplay_style_theme === selectedTheme));
             }
 
