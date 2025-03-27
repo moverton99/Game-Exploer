@@ -510,6 +510,16 @@
         "Replayability_Desc": "Asymmetric factions and dynamic gameplay yield high replay value, with each faction offering a distinct experience."
     },
     {
+        "name": "Scrabble",
+        "learning_curve": 25,
+        "strategic_depth": 65,
+        "learning_curve_desc": "Scrabble’s basic rules are easy to learn, requiring only familiarity with spelling and scoring.",
+        "strategic_depth_desc": "Deep knowledge of vocabulary, tile management, and board control offers high strategic complexity for skilled players.",
+        "gameplay_style_theme": "Classic",
+        "replayability": 80,
+        "Replayability_Desc": "Endless word combinations, competitive tension, and evolving skill make Scrabble engaging over countless sessions."
+    },
+    {
         "name": "Settlers of Catan",
         "learning_curve": 40,
         "strategic_depth": 60,
@@ -708,6 +718,26 @@
         "gameplay_style_theme": "Area Control & Wargames",
         "replayability": 70,
         "Replayability_Desc": "Thematic narrative and varied objectives keep the game engaging, despite some repetitive elements."
+    },
+    {
+        "name": "Warhammer Age of Sigmar",
+        "learning_curve": 80,
+        "strategic_depth": 85,
+        "learning_curve_desc": "AoS has simplified many rules compared to its predecessor, but faction-specific mechanics and synergies still require dedicated learning.",
+        "strategic_depth_desc": "Positioning, timing of abilities, and varied faction playstyles offer deep strategic layers.",
+        "gameplay_style_theme": "Area Control & Wargames",
+        "replayability": 85,
+        "Replayability_Desc": "A vast range of factions and constant updates ensure rich and varied replayability."
+    },
+    {
+        "name": "Warhammer 40,000",
+        "learning_curve": 85,
+        "strategic_depth": 90,
+        "learning_curve_desc": "40K's dense ruleset, codexes, and complex interactions make it demanding for newcomers.",
+        "strategic_depth_desc": "Layered strategy through list-building, tactical objectives, and deployment offers high strategic depth.",
+        "gameplay_style_theme": "Area Control & Wargames",
+        "replayability": 85,
+        "Replayability_Desc": "Expansive faction pool and evolving meta create enduring variety and challenge."
     },
     {
         "name": "Wingspan",
