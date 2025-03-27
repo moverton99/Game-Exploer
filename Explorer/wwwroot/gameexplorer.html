@@ -75,7 +75,7 @@
             #gameTable td {
                 color: #cee5e2;
             }
-            /*
+        /*
                 #gameTable tr:nth-child(even) {
                 background-color: #f0f0f0;
             
@@ -204,7 +204,6 @@
     <div id="gameSelectionModal"></div>
 
     <script>
-        //const gamelistpath = "https://drive.google.com/file/d/15COGfjiOP6MhvoTyvtKzrQsEfkJIFoOd";
         const gamelistpath = "games.json";
         const modal = document.getElementById('gameSelectionModal');
         let hideTimeout;
@@ -338,7 +337,7 @@
                 }
             });
             filterChartAndTable();
-            
+
 
             function filterChartAndTable() {
                 modal.style.display = 'none';
@@ -358,7 +357,7 @@
                     scatterChart.options.scales.y.title.text = '<- Low           Replayability         High ->';
                 }
 
-                 scatterChart.update();
+                scatterChart.update();
                 updateTable(games.filter(game => selectedTheme === "all" || game.gameplay_style_theme === selectedTheme));
             }
 
